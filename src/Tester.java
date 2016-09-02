@@ -1,4 +1,4 @@
-import Divide_Conquer.Merge_Sort;
+import Hashing.MyHashTable;
 
 /**
  * Created by austin on 8/27/16.
@@ -24,6 +24,7 @@ public class Tester {
         */
 
         //MyStringBuilder Testing
+        /*
         MyStringBuilder bs = new MyStringBuilder();
         bs.append("hi");
         bs.append("stfu");
@@ -33,6 +34,17 @@ public class Tester {
         MyStringBuilder x = new MyStringBuilder("HIT");
         x.insert("hi", 2);
         System.out.println(x);
+        */
+
+
+        MyHashTable<String, String> directory = new MyHashTable<>(2);
+        directory.put("Austin", "5854069146");
+        directory.put("Clyde", "3124069146");
+        directory.put("Randy", "5853550332");
+        directory.put("Lynn", "5856904113");
+
+        directory.print_map();
+
     }
 
     private static void print_array (Object[] arr) {

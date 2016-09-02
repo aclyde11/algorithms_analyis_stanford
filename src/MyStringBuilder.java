@@ -7,12 +7,10 @@ public class MyStringBuilder{
     private int index;
 
     public MyStringBuilder() {
-        super();
-        chars = new char[5];
+        chars = new char[16];
     }
 
     public MyStringBuilder(String str) {
-        super();
         chars = new char[str.length()];
         this.append(str);
     }
