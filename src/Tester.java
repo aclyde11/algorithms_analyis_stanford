@@ -23,15 +23,15 @@ public class Tester {
         print_array(ins);
         */
 
-        //MyStringBuilder Testing
+        //Data_Structures.MyStringBuilder Testing
         /*
-        MyStringBuilder bs = new MyStringBuilder();
+        Data_Structures.MyStringBuilder bs = new Data_Structures.MyStringBuilder();
         bs.append("hi");
         bs.append("stfu");
         bs.append("SUPERLONGSTRINGTHISMIGHTBEALOTFORITPOHANDLE");
         System.out.println(bs.toString());
 
-        MyStringBuilder x = new MyStringBuilder("HIT");
+        Data_Structures.MyStringBuilder x = new Data_Structures.MyStringBuilder("HIT");
         x.insert("hi", 2);
         System.out.println(x);
         */

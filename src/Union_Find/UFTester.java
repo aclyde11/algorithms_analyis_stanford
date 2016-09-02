@@ -8,6 +8,11 @@ public class UFTester {
     public static void main (String args[]) {
 
         //test quick find, union, weighted union
+        WeightedQuickUnion qu = new WeightedQuickUnion(10);
+        qu.union(1, 2);
+        qu.union(2, 3);
+        System.out.println(qu.connected(1, 3));
+
 
         //benchmark the three
 
@@ -22,9 +27,8 @@ public class UFTester {
         System.out.println(p.percolates());
         System.out.println(p.getLoc(1, 1) + " " + p.getLoc(1, 2));
 
-
         //check monte carlo accuracy
-        PercolationStats s = new PercolationStats(20, 200);
+        PercolationStats s = new PercolationStats(200, 2000);
         System.out.println(s.mean() + "  {" + s.confidenceLo() + ", " + s.confidenceHi() + "}");
 
 

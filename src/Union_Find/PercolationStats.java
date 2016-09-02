@@ -22,8 +22,10 @@ public class PercolationStats {
             while (!p.percolates()) {
                 int randx = (int) (n * Math.random() + 1);
                 int randy = (int) (n * Math.random() + 1);
-                p.open(randx, randy);
-                open++;
+                if (!p.isOpen(randx, randy)) {
+                    p.open(randx, randy);
+                    open++;
+                }
             }
             System.out.println(open);
             thres[i] = ((double) open) / (n * n);
